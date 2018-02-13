@@ -1,7 +1,7 @@
 import { Input, Output, Component, EventEmitter } from '@angular/core';
 import { Ng2EditService } from './ng2edit.service';
 @Component({
-  selector: 'ng2edit-component',
+  selector: 'ng2edit',
   templateUrl: './ng2edit.component.html',
   styleUrls: ['./ng2edit.component.css'],
   providers: [Ng2EditService]

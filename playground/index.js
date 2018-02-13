@@ -20,7 +20,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_2.Component({
             selector: 'app',
-            template: "<ng2edit-component></ng2edit-component>"
+            template: "<ng2edit></ng2edit>"
         })
     ], AppComponent);
     return AppComponent;

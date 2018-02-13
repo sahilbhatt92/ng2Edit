@@ -25,7 +25,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { SampleModule } from 'ng2edit';
+import { Ng2EditModule } from 'ng2edit';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { SampleModule } from 'ng2edit';
     BrowserModule,
 
     // Specify your library as an import
-    LibraryModule
+    Ng2EditModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -50,8 +50,24 @@ Once your library is imported, you can use its components, directives and pipes 
 <h1>
   {{title}}
 </h1>
-<sampleComponent></sampleComponent>
+<ng2edit url="/exmaple" [name]="nameOfField" [value]="valueOfdataToBeUpdated" (onSuccess)="successFunction();" (onError)="errorFunction();"></ng2edit>
 ```
+
+## Attributes
+
+| Attributes | Description |
+| --- | --- |
+| url | url for backend service |
+| name | Name of the field |
+| value | value of the field to be updated |
+
+
+## Events
+
+| Attributes | Description |
+| --- | --- |
+| onSucess | add method for for sucess http call |
+| onError | add method for for error http call |
 
 ## Development
 
@@ -66,6 +82,10 @@ To lint all `*.ts` files:
 ```bash
 $ npm run lint
 ```
+
+## Contribution
+
+Please contribute to make this plugin more useful for devs.
 
 ## License
 

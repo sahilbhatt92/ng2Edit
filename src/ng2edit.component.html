@@ -5,7 +5,7 @@
     <div [hidden]="showInline">
       <form #inlineForm="ngForm" method="POST" (ngSubmit)="onSubmit(inlineForm.value)" novalidate>
         <div class="input-group">
-          <input type="text" class="form-control input-sm" name="name" [ngModel]="input" required />
+          <input type="text" class="form-control input-sm" [name]="name" [ngModel]="input" required />
           <div class="input-group-btn">
             <button type="submit" class="btn btn-sm btn-primary ng2edit-btn-save" [disabled]="submitted || inlineForm.invalid">
               Save
