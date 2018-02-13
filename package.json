@@ -75,6 +75,6 @@
   "dependencies": {
     "@angular/forms": "^5.2.4",
     "@angular/http": "^5.2.4",
-    "bootstrap": "^4.0.0"
+    "bootstrap": "^3.3.7"
   }
 }
