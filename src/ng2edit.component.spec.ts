@@ -1,6 +1,11 @@
+import {} from 'jasmine';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By }              from '@angular/platform-browser';
 import { DebugElement }    from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
+import { Ng2EditService } from './ng2edit.service';
 
 import { Ng2EditComponent } from './ng2edit.component';
 
@@ -14,6 +19,8 @@ describe('Ng2EditComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [ Ng2EditComponent ], // declare the test component
+      imports: [ FormsModule, HttpModule ],
+      providers: [ Ng2EditService ]
     });
 
     fixture = TestBed.createComponent(Ng2EditComponent);
