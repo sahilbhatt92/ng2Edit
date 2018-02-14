@@ -6,11 +6,11 @@ import { NgModule } from '@angular/core';
 import { Component } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-import { Ng2EditModule }  from '../src/index';
+import { Ng2EditModule }  from 'ng2edit';
 
 @Component({
   selector: 'app',
-  template: `<ng2edit-component></ng2edit-component>`
+  template: `<ng2edit></ng2edit>`
 })
 class AppComponent {}
 
