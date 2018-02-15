@@ -1,5 +1,8 @@
 # ng2edit
-
+[![npm version](https://badge.fury.io/js/ng2edit.svg)](https://badge.fury.io/js/ng2edit)
+[![npm](https://david-dm.org/sahilbhatt92/ng2Edit/status.svg)](https://www.npmjs.com/package/ng2edit)
+[![npm](https://img.shields.io/npm/dm/ng2edit.svg)](https://www.npmjs.com/package/ng2edit)
+<br/><br/>
 An Angular library for inline editing/updating of text. For Example, you can edit some data and display on the go.
 
 ## Installation
@@ -52,7 +55,7 @@ Once your library is imported, you can use its components, directives and pipes 
 <h1>
   {{title}}
 </h1>
-<ng2edit url="/exmaple" name="nameOfField" value="valueOfdataToBeUpdated" (onSuccess)="successFunction();" (onError)="errorFunction();"></ng2edit>
+<ng2edit url="/exmaple" name="nameOfField" value="valueOfdataToBeUpdated" (onSuccess)="successFunction($event);" (onError)="errorFunction($event);"></ng2edit>
 ```
 
 ## Attributes
@@ -73,15 +76,15 @@ Once your library is imported, you can use its components, directives and pipes 
 
 ## Customize
 
-Although `ng2Edit` comes with bootstrap which makes it easy to integrate with your existing bootstrap styles. But if you want it to see on your own way, you can use our pre-defined classes.
-
-**Note: For now there are no icons used we will update soon. But we have managed to add &crarr; HTML Entity. Don't worry use can use your own.**
+Although `ng2Edit` comes with `bootstrap@3` which makes it easy to integrate with your existing bootstrap styles. But if you want it to see on your own way, you can use our pre-defined classes.
 
 | Classes | Description |
 | --- | --- |
 | `ng2edit-btn` | class of the button with &crarr; inside of it |
 | `ng2edit-btn-save` | class of the save button |
 | `ng2edit-btn-cancel` | class of the cancel button |
+
+**Note: For now there are no icons used we will update soon. But we have managed to add &crarr; HTML Entity. Don't worry use can use your own.**
 
 ## Posting data to server
 
