@@ -1,5 +1,7 @@
 # ng2edit
 
+An Angular library for inline editing/updating of text. For Example, you can edit some data and display on the go.
+
 ## Installation
 
 To install this library, run:
@@ -50,7 +52,7 @@ Once your library is imported, you can use its components, directives and pipes 
 <h1>
   {{title}}
 </h1>
-<ng2edit url="/exmaple" [name]="nameOfField" [value]="valueOfdataToBeUpdated" (onSuccess)="successFunction();" (onError)="errorFunction();"></ng2edit>
+<ng2edit url="/exmaple" name="nameOfField" value="valueOfdataToBeUpdated" (onSuccess)="successFunction();" (onError)="errorFunction();"></ng2edit>
 ```
 
 ## Attributes
@@ -69,6 +71,26 @@ Once your library is imported, you can use its components, directives and pipes 
 | onSucess | add method for for sucess http call |
 | onError | add method for for error http call |
 
+## Customize
+
+Although `ng2Edit` comes with bootstrap which makes it easy to integrate with your existing bootstrap styles. But if you want it to see on your own way, you can use our pre-defined classes.
+
+**Note: For now there are no icons used we will update soon. But we have managed to add &crarr; HTML Entity. Don't worry use can use your own.**
+
+| Classes | Description |
+| --- | --- |
+| `ng2edit-btn` | class of the button with &crarr; inside of it |
+| `ng2edit-btn-save` | class of the save button |
+| `ng2edit-btn-cancel` | class of the cancel button |
+
+## Posting data to server
+
+The data will be posted in JSON. Please take a look at example below.
+
+```JSON
+{ "nameOfField": "valueofField" }
+```
+
 ## Development
 
 To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
@@ -82,10 +104,13 @@ To lint all `*.ts` files:
 ```bash
 $ npm run lint
 ```
+## Issues
+
+If library is not able to run on your local machine please raise an issue.
 
 ## Contribution
 
-Please contribute to make this plugin more useful for devs.
+If you want to enhance the plugin or to fix any major bug, pull request are most welcome.
 
 ## License
 
