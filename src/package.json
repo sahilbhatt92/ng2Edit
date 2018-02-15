@@ -1,6 +1,6 @@
 {
   "name": "ng2edit",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/sahilbhatt92/ng2Edit"
@@ -10,7 +10,7 @@
     "email": "sahildude92@gmail.com"
   },
   "keywords": [
-    "angular"
+    "angular", "inline-editor", "ng", "editor"
   ],
   "license": "MIT",
   "bugs": {
