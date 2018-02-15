@@ -1,1 +1,65 @@
-@import './node_modules/bootstrap/dist/css/bootstrap.min.css';
+.ng2edit-btn {
+    border: none;
+    background: #fff;
+    color: #2196F3;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ng2edit-btn-save {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.ng2edit-btn-save:hover {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
+
+.ng2edit-btn-save:active {
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+
+.ng2edit-btn-cancel {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.ng2edit-btn-cancel:hover {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;    
+}
+
+.ng2edit-btn-cancel:active {
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+
+.ng2edit-input {
+    display: inline-block;
+    height: 27px;
+    padding: 0px 8px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}

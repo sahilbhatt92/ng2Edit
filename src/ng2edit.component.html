@@ -1,19 +1,17 @@
 <div [hidden]="!showInline">
     {{input}}
-    <button class="btn btn-link ng2edit-btn" (click)="showInline = !showInline">&crarr;</button>
+    <button class="ng2edit-btn" (click)="showInline = !showInline">&crarr;</button>
     </div>
     <div [hidden]="showInline">
       <form #inlineForm="ngForm" method="POST" (ngSubmit)="onSubmit(inlineForm.value)" novalidate>
         <div class="input-group">
-          <input type="text" class="form-control input-sm" [name]="name" [ngModel]="input" required />
-          <div class="input-group-btn">
-            <button type="submit" class="btn btn-sm btn-primary ng2edit-btn-save" [disabled]="submitted || inlineForm.invalid">
+          <input type="text" class="ng2edit-input" [name]="name" [ngModel]="input" required />
+            <button type="submit" class="ng2edit-btn-save" [disabled]="submitted || inlineForm.invalid">
               Save
             </button>
-            <button type="button" class="btn btn-sm btn-danger ng2edit-btn-cancel" (click)="showInline = !showInline">
+            <button type="button" class="ng2edit-btn-cancel" (click)="showInline = !showInline">
               Cancel
             </button>
-          </div>
             </div>
       </form>
     </div>
