@@ -15,13 +15,7 @@ $ npm install ng2edit --save
 
 ## Consuming your library
 
-Once you have published your library to npm, you can import your library in any Angular application by running:
-
-```bash
-$ npm install ng2edit
-```
-
-and then from your Angular `AppModule`:
+Once you have installed your library, you can import your library in any Angular application. As shown in example below:
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -76,10 +70,11 @@ Once your library is imported, you can use its components, directives and pipes 
 
 ## Customize
 
-Although `ng2Edit` comes with `bootstrap@3` which makes it easy to integrate with your existing bootstrap styles. But if you want it to see on your own way, you can use our pre-defined classes.
+Although `ng2Edit` comes with `bootstrap` styles which makes it feel like existing bootstrap component. But if you want it to see on your own way, you can use our pre-defined classes.
 
 | Classes | Description |
 | --- | --- |
+| `ng2edit-input` | class of the input-box |
 | `ng2edit-btn` | class of the button with &crarr; inside of it |
 | `ng2edit-btn-save` | class of the save button |
 | `ng2edit-btn-cancel` | class of the cancel button |
