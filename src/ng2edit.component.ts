@@ -10,7 +10,7 @@ import { Observable } from 'rxjs/Observable';
   styleUrls: ['./ng2edit.component.css']
 })
 export class Ng2EditComponent {
-  @Input() input: string;
+  @Input() value: string;
   @Input() name: string;
   @Input() url: string;
   @Output() onError: EventEmitter<any> = new EventEmitter();
@@ -22,11 +22,11 @@ export class Ng2EditComponent {
     this.showInline = true;
   }
 
-  onSubmit(value: any) {
+  onSubmit(data: any) {
     this.submitted = true;
-    this.post(this.url, value).subscribe((item) => {
+    this.post(this.url, data).subscribe((item) => {
       this.submitted = false;
-      this.input = value.name;
+      this.value = data.name;
       this.showInline = false;
       this.onSuccess.emit(item);
     }, (error) => {

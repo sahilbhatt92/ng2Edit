@@ -16,6 +16,13 @@
     border-color: #4cae4c;
 }
 
+.ng2edit-btn-save:disabled, .ng2edit-btn-save:disabled:hover {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    cursor: not-allowed;
+    opacity: .7;
+}
+
 .ng2edit-btn-save:hover {
     color: #fff;
     background-color: #449d44;

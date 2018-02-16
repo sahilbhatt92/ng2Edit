@@ -1,11 +1,11 @@
 <div [hidden]="!showInline">
-    {{input}}
+    {{value}}
     <button class="ng2edit-btn" (click)="showInline = !showInline">&crarr;</button>
     </div>
     <div [hidden]="showInline">
       <form #inlineForm="ngForm" method="POST" (ngSubmit)="onSubmit(inlineForm.value)" novalidate>
         <div class="input-group">
-          <input type="text" class="ng2edit-input" [name]="name" [ngModel]="input" required />
+          <input type="text" class="ng2edit-input" [name]="name" [ngModel]="value" required />
             <button type="submit" class="ng2edit-btn-save" [disabled]="submitted || inlineForm.invalid">
               Save
             </button>

@@ -10,9 +10,20 @@ import { Ng2EditModule }  from 'ng2edit';
 
 @Component({
   selector: 'app',
-  template: `<ng2edit></ng2edit>`
+  template: `<ng2edit url="/exmaple" name="nameOfField" value="valueOfdataToBeUpdated"
+            (onSuccess)="successFunction($event);"
+            (onError)="errorFunction($event);"></ng2edit>`
 })
-class AppComponent {}
+class AppComponent {
+
+  onSuccess(data: any) {
+    console.log(data);
+  }
+
+  onError(error: any) {
+    console.log(error);
+  }
+}
 
 @NgModule({
   bootstrap: [ AppComponent ],

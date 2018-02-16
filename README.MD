@@ -1,9 +1,8 @@
 # ng2edit
 [![npm version](https://badge.fury.io/js/ng2edit.svg)](https://badge.fury.io/js/ng2edit)
-[![npm](https://david-dm.org/sahilbhatt92/ng2Edit/status.svg)](https://www.npmjs.com/package/ng2edit)
 [![npm](https://img.shields.io/npm/dm/ng2edit.svg)](https://www.npmjs.com/package/ng2edit)
 <br/><br/>
-An Angular library for inline editing/updating of text. For Example, you can edit some data and display on the go.
+An Angular library for inline editing/updating of text. For Example, you can edit some data and display on the go. Please check out the [Demo](https://embed.plnkr.co/dWPQ8bTpPpZvfoxgqveV/)
 
 ## Installation
 
